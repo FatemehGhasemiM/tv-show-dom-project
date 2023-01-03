@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 body {
   background-color: rgb(48, 48, 48);
 }
@@ -41,6 +42,25 @@ button {
   font-size: 1.2rem;
   border: 3px solid rgb(37, 37, 37);
   box-shadow: 0px 0px 5px rgba(191, 155, 27, 0.589);
+=======
+header{
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+input[type="search"] {
+  display: block;
+  padding: 20px;
+  margin-right: 30px;
+}
+select , input, option {
+  width: 500px;
+  height: 48px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 2px solid rgb(191, 155, 27);
+  box-shadow: 0px 0px 8px rgba(191, 155, 27, 0.69);
+>>>>>>> 1dafe42a74b2e38a194437f51917d696f4e32ec5
 }
 
 .container {
@@ -71,6 +91,7 @@ button {
 .summary {
   overflow: auto;
 }
+<<<<<<< HEAD
 
 select {
   width: 350px;
@@ -99,3 +120,16 @@ footer {
 footer a {
   color: rgb(239, 187, 0);
 }
+=======
+select {
+  width: 200px;
+  font-size: 1.1rem;
+  z-index: 3;
+}
+select option{
+  z-index: auto;
+}
+.hide{
+    display: none;
+}
+>>>>>>> 1dafe42a74b2e38a194437f51917d696f4e32ec5
