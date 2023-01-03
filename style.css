@@ -1,53 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Condensed&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(48, 48, 48);
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 0px 1px 30px rgba(191, 155, 27, 0.658);
+}
 
 input[type="search"] {
   display: block;
-  padding: 25px 20px;
-  margin: 30px auto;
+  padding: 20px;
+  margin-right: 60px;
   width: 500px;
+}
+button {
+  background-color: rgb(239, 187, 0);
+  /* border: 2px solid rgb(0, 0, 0); */
+  margin-right: 60px;
+  color: white;
+}
+select,
+input,
+button {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 400px;
   height: 50px;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  border: 2px solid rgb(191, 155, 27);
-  box-shadow: 0px 0px 8px rgba(191, 155, 27, 0.69);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 3px solid rgb(37, 37, 37);
+  box-shadow: 0px 0px 5px rgba(191, 155, 27, 0.589);
 }
 
 .container {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .container .card {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   border-radius: 15px;
   margin: 20px;
   padding: 30px;
   width: 350px;
   max-height: 500px;
-  background-color: antiquewhite;
+  background-color: rgb(252, 209, 51);
+  border: 1px solid rgb(7, 7, 7);
+  box-shadow: 0px 0px 23px rgb(11, 11, 11);
 }
+
 .card img {
   border-radius: 15px;
 }
-.card .summary {
+
+.card,
+.summary {
   overflow: auto;
-  /* overflow: hidden ; */
 }
-/* input[type="submit"] {
+
+select {
+  width: 350px;
+  z-index: 3;
+  background-color: rgb(239, 187, 0);
   color: white;
-  display: block;
-  margin: 30px auto;
-  width: 180px;
-  height: 50px;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  background-color: rgb(191, 155, 27);
-  border: 2px solid rgb(191, 155, 27);
-  box-shadow: 0px 0px 8px rgba(191, 155, 27, 0.69);
-} */
+  text-align: center;
+}
+
+select option {
+  z-index: auto;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(35, 35, 35);
+  color: aliceblue;
+  text-align: center;
+  box-shadow: 0px -1px 20px rgba(191, 155, 27, 0.255);
+}
+footer a {
+  color: rgb(239, 187, 0);
+}
